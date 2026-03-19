@@ -1,7 +1,10 @@
 #boy {
-    top: 420px;
-    left: 1356px;
+       width: 700px;
+    position: relative;
+    top: 150px;
+    left: 38vw;
 }
+
 
 #without_underline {
     position: fixed;
@@ -62,16 +65,59 @@
 .p1 {
     text-align: center;
 
-    font-size: 20px;
+    font-size: 35px;
     color: #0000008f;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+#EventsWithMespan{
 
-img {
-    position: absolute;
-    top: 35vw;
-    left: 40vw;
+    top: 530px;
+    padding-bottom: 910px;
+    justify-content: space-between;
+    padding-left: 1150px;
+    padding-top: 200px;
+    padding-right: 1150px;
+    position: relative;
+    background-color: #dee2e66b;
+    border: 4px solid #dee2e66b;
+    border-radius: 30px;
+    text-align: end;
+    margin-left: 0;
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+#Achievementsspan{
+top: 530px;
+    padding-bottom: 400px;
+    justify-content: space-between;
+    padding-left: 1000px;
+    padding-top: 200px;
+    padding-right: 1000px;
+    position: relative;
+    background-color: rgb(97 49 193);
+    border: 4px solid rgb(97 49 193);
+    border-radius: 30px;
+    text-align: end;
+       margin-left: 179px;
+    color: white;
+    font-size: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+#Achievements_cards{
+        margin-bottom: 505px;
+        margin-top: 75px;
+     display: flex;
+    color: rgba(0, 0, 0, 0.668);
+    justify-content: center;
+    gap: 80px;
+}
+
+
+
+
 
 #skillsspan {
     top: 530px;
@@ -138,22 +184,98 @@ img {
     font-size: 18px;
 }
 
+#card11 {
+    position: relative;
+    z-index: 9;
+    top: 530px;
+    background-color: white;
+    width: 600px;
+    text-align: center;
+    height: 700px;
+    font-size: 18px;
+    border: #165bfb solid;
+    border-radius: 30px;
+}
+
+#card22 {
+    position: relative;
+    top: 530px;
+    z-index: 9;
+    background-color: white;
+     height: 700px;
+    border: #165bfb solid;
+    border-radius: 30px;
+    width: 600px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#card33 {
+    position: relative;
+    top: 530px;
+    z-index: 9;
+    background-color: white;
+    border: #165bfb solid;
+    border-radius: 30px;
+    width: 600px;
+    text-align: center;
+  height: 700px;
+    font-size: 18px;
+}
+
+#card44 {
+    position: relative;
+    z-index: 9;
+    top: 530px;
+    background-color: white;
+    width: 600px;
+    text-align: center;
+     height: 700px;
+    font-size: 18px;
+    border: #165bfb solid;
+    border-radius: 30px;
+}
 .colored {
     color: rgb(97 49 193);
 }
 
 .cardtitle {
     color: #000;
-    font-size: 24px;
+    font-size: 56px;
 }
 
+.Achievementsimg{
+
+ height: 250px;
+    left: 35%;
+    top: 0%;
+
+}
 .skillsimg {
     height: 66px;
     left: 35%;
     top: 0%;
 
 }
-
+.Attendbutton:hover{
+   background-color: #0142da; 
+}
+.Attendbutton {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-right: 30px;
+    position: relative;
+    color: white;
+    background-color: rgb(97 49 193);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    border: 1px;
+    border-radius: 6px;
+    top: -6px;
+    left: -3px;
+    padding-left: 30px;
+    transition: background-color 1s;
+}
 .CVbutton {
 
     padding-bottom: 30px;

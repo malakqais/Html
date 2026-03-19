@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+<script>
+const student = [3];
+
+ student[0] = {
+name:"Toqa",
+age:26,
+gpa :90,
+isGraduated:true 
+};
+ student[1] = {
+name:"Malak",
+age:22,
+gpa :80,
+isGraduated:false 
+};
+
+student[2] = {
+name:"Shahed",
+age:20,
+gpa :88,
+isGraduated:false 
+};
+
+
+for (let x of student) {
+document.write("Name : ")
+document.write(x.name)
+document.write("<br>")
+document.write("Age : ")
+document.write(x.age)
+document.write("<br>")
+document.write("GPA : ")
+document.write(x.gpa)
+document.write("<br>")
+document.write(" Graduated : ")
+document.write(x.isGraduated)
+document.write("<br>")
+document.write("<br>")
+}
+document.write("Type of Name is : " )
+document.write(typeof student[0].name)
+document.write("<br>")
+document.write("Type of Age is : " )
+document.write(typeof student[0].age)
+document.write("<br>")
+document.write("Type of GPA is : " )
+document.write(typeof student[0].gpa)
+document.write("<br>")
+document.write("Type of Graduated is : " )
+document.write(typeof student[0].isGraduated)
+document.write("<br>")
+document.write("<br>")
+
+
+for(let x in student){
+if((student[x].gpa > 90) ||(student[x].gpa==90)){
+document.write(student[x].name)
+document.write("→ Excellent")
+document.write("<br>")
+}
+
+else if(((student[x].gpa==70)||(student[x].gpa>70))&&((student[x].gpa==89)||(student[x].gpa<89))){
+
+document.write(student[x].name)
+document.write("→ Good")
+document.write("<br>")
+}
+else if(student[x].gpa< 0 &&student[x].gpa> 100 ){
+
+document.write("→ Invalid GPA")
+document.write("<br>")
+
+}
+else{
+    document.write(student[x].name)
+document.write("→ Fail")
+document.write("<br>")
+}
+}
+
+
+
+// let ch=1;
+
+// switch(ch)
+// {
+//     case 1: 
+//     if((student[x].gpa > 90) ||(student[x].gpa==90)){
+// document.write(student[x].name);
+// document.write("→ Excellent");
+// document.write("<br>");
+// break;}
+// case 2 :
+// if(((student[x].gpa==70)||(student[x].gpa>70))&&((student[x].gpa==89)||(student[x].gpa<89))){
+// document.write(student[x].name);
+// document.write("→ Good");
+// document.write("<br>");
+// break;}
+
+
+// case 3:
+//     if(student[x].gpa< 70 ){
+//  document.write(student[x].name)
+// document.write("→ Fail")
+// document.write("<br>")
+
+
+// break;}
+
+// default:
+//     document.write("→ Invalid GPA");
+// document.write("<br>");
+// }
+
+
+
+let maxStudent = student[0];
+
+for (let s of student) {
+    if (s.gpa > maxStudent.gpa) {
+        maxStudent = s;
+    }
+}
+
+for (let s of student) {
+    if (s === maxStudent) {
+        document.write("<br>");
+        document.write("Top student found<br>");
+        break;
+    }
+}
+</script>
+
+
+
+</body>
+</html>
