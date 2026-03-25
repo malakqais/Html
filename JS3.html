@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+
+ function tellFortune(job,location,partners_name,number_of_children)
+{
+return document.write("You will be a  "+job+" in "+ location+" , and married to "+partners_name+" with "+number_of_children+" kids.");
+
+}
+
+tellFortune('software engineer', 'Jordan', 'Alice', 3);
+document.write("<br>");
+
+function calculateDogAge(puppy_age)
+{
+
+    let NN=puppy_age*7;
+    return document.write("Your doggie is "+NN+" years old in dog years!")
+
+}
+
+ calculateDogAge(1);
+document.write("<br>");
+
+
+function calculateSupply(age, amount_per_day)
+{
+const max_age=100;
+const total = (max_age - age)* 365 * amount_per_day;
+return document.write("You will need "+total+" to last you until the ripe old age of "+max_age);
+
+}
+
+calculateSupply(30,3);
+document.write("<br>");
+
+
+
+function calculateSupply(age, amount_per_day)
+{
+const max_age=100;
+const total = (max_age - age)* 365 * amount_per_day;
+return document.write("You will need "+total+" to last you until the ripe old age of "+max_age);
+
+}
+
+
+//4
+// what is the error
+// function double(cat) {
+//   return 2  x;
+// }
+
+// x is undefined
+
+
+// function double(7) {
+//   return 2  7;
+// }
+
+// worng parameter it is number not variable
+
+
+// function double('7') {
+//   return 2  'x';
+// }
+
+// worng parameter it is string not variable
+
+
+
+//5
+
+// func double1(x {
+//   return 2  x ;
+// }
+
+//fixed
+function double1(x) {
+  return 2*x ;
+}
+
+
+// functiondouble2 x)
+// return 2  x;
+// }
+
+//fixed
+function double2(x) {
+  return 2*x ;
+}
+
+
+// function (x) double3 {
+//   return 2  x;
+
+//fixed
+function  double3(x) {
+  return 2*x ;
+}
+
+
+
+
+//6 
+function canIGetADrivingLicense(age)
+{
+
+    if (age>=20)
+{return document.write("yes you can");}
+
+else{
+return document.write("please come back after "+(20-age)+" years to get one");
+}
+}
+
+canIGetADrivingLicense(21);
+document.write("<br>");
+
+canIGetADrivingLicense(17);
+document.write("<br>");
+
+canIGetADrivingLicense(20);
+document.write("<br>");
+
+
+//7
+function  sameLength(first,second)
+{
+    if(first.length===second.length)
+     {return document.write("true") ;}
+
+else{return  document.write("false") ;}
+
+}
+
+
+sameLength("tree","clue");
+document.write("<br>");
+
+ sameLength("tree","car");
+ document.write("<br>");
+
+
+
+
+
+function  average(s1,s2,s3,s4,s5)
+{
+
+    return document.write((s1+s2+s3+s4+s5)/5)
+}
+
+average(1,2,3,4,5);
+document.write("<br>");
+
+average(5,7,9,3,5);
+document.write("<br>");
+
+     </script>
+</body>
+</html>

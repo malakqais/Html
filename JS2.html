@@ -60,7 +60,7 @@ document.write(typeof student[0].isGraduated)
 document.write("<br>")
 document.write("<br>")
 
-
+// if((student[x].gpa >= 90)
 for(let x in student){
 if((student[x].gpa > 90) ||(student[x].gpa==90)){
 document.write(student[x].name)
@@ -134,7 +134,8 @@ for (let s of student) {
 for (let s of student) {
     if (s === maxStudent) {
         document.write("<br>");
-        document.write("Top student found<br>");
+        document.write("Top student found is :");
+         document.write(s.name);
         break;
     }
 }
